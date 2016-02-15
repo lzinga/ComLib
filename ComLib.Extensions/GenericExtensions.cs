@@ -2,19 +2,37 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace ComLib.Extensions
+namespace ComLib.Extension
 {
     public static class GenericExtensions
     {
         /// <summary>
-        /// Checks if object is null or default.
+        /// Checks if object is null or default
+        /// <para>
+        /// Checks for strings as well if null or empty/null or whitespace.
+        /// </para>
         /// </summary>
-        public static void IsNullOrDefault<T>(this T obj, string parameterName) where T : class
+        public static bool IsNullOrEmpty<T>(this T obj)
         {
             if (obj == null)
             {
-                throw new ArgumentNullException(parameterName);
+                return true;
             }
+
+            if(obj.GetType() == typeof(string))
+            {
+                if (string.IsNullOrEmpty(obj.ToString()))
+                {
+                    return true;
+                }
+
+                if (string.IsNullOrWhiteSpace(obj.ToString()))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ComLib.Extensions
+namespace ComLib.Extension
 {
     public static class ListExtensions
     {

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Extensions", "ComLib.Extensions\ComLib.Extensions.csproj", "{2BF0EC73-A67F-47BB-B3A2-F931FACC7866}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Extension", "ComLib.Extensions\ComLib.Extension.csproj", "{2BF0EC73-A67F-47BB-B3A2-F931FACC7866}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Test", "ComLib.Test\ComLib.Test.csproj", "{F1C20C2F-4383-473A-9D3B-F16854A5909D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{2BF0EC73-A67F-47BB-B3A2-F931FACC7866}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BF0EC73-A67F-47BB-B3A2-F931FACC7866}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BF0EC73-A67F-47BB-B3A2-F931FACC7866}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
