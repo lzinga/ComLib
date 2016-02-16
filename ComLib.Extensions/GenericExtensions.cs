@@ -60,5 +60,18 @@ namespace ComLib.Extension
                 return (T)serializer.Deserialize(reader);
             }
         }
+        
+        /// <summary>
+        /// Converts object into the specified type.
+        /// </summary>
+        public static T To<T>(this object arg)
+        {
+            if(arg == null)
+            {
+                throw new ArgumentNullException("arg");
+            }
+
+            return (T)Convert.ChangeType(arg, typeof(T), null);
+        }
     }
 }
