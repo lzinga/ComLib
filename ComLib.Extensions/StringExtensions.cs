@@ -23,7 +23,7 @@ namespace ComLib.Extension
         /// <summary>
         /// Replaces substring inside string where matched. Will return original if no match found.
         /// </summary>
-        public static string TryReplace(this string source, string oldString, string newString, StringComparison comp)
+        public static string Replace(this string source, string oldString, string newString, StringComparison comp)
         {
             int index = source.IndexOf(oldString, comp);
             bool matchFound = index >= 0;
