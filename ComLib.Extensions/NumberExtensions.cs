@@ -5,21 +5,53 @@ namespace ComLib.Extension
 {
     public static class NumberExtensions
     {
+        private static readonly string[] Sizes = { "B", "KB", "MB", "GB", "TB", "PB" };
+
+        #region ToFileSizeString
         /// <summary>
-        /// Turns the size into a human readable file size.
+        /// Template method for ToFileSizeString
         /// </summary>
-        public static string FileSizeToString(this long size)
+        private static Tuple<int, double> FileSizeCalculation(double length)
         {
-            string[] sizes = { "B", "KB", "MB", "GB", "TB", "PB" };
-            double len = size;
-            int order = 0;
-            while (len >= 1024 && order + 1 < sizes.Length)
+            int sizeIndex = 0;
+            while (length >= 1024 && sizeIndex + 1 < Sizes.Length)
             {
-                order++;
-                len = len / 1024;
+                sizeIndex++;
+                length = length / 1024;
             }
 
-            return string.Format("{0:0.##} {1}", len, sizes[order]);
+            return new Tuple<int, double>(sizeIndex, length);
         }
+
+        /// <summary>
+        /// Turns number into a file size string.
+        /// <para/> Example: "9.54 MB"
+        /// </summary>
+        public static string ToFileSizeString(this long size)
+        {
+            Tuple<int, double> result = FileSizeCalculation(size);
+            return string.Format("{0:0.##} {1}", result.Item2, Sizes[result.Item1]);
+        }
+
+        /// <summary>
+        /// Turns number into a file size string.
+        /// <para/> Example: "9.54 MB"
+        /// </summary>
+        public static string ToFileSizeString(this int size)
+        {
+            Tuple<int, double> result = FileSizeCalculation(size);
+            return string.Format("{0:0.##} {1}", result.Item1, result.Item2);
+        }
+
+        /// <summary>
+        /// Turns number into a file size string.
+        /// <para/> Example: "9.54 MB"
+        /// </summary>
+        public static string ToFileSizeString(this double size)
+        {
+            Tuple<int, double> result = FileSizeCalculation(size);
+            return string.Format("{0:0.##} {1}", result.Item1, result.Item2);
+        }
+        #endregion
     }
 }

@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="ExtensionTests\NumberExtensionTests.cs" />
     <Compile Include="ExtensionTests\StringExtensionTests.cs" />
     <Compile Include="ExtensionTests\ListExtensionTests.cs" />
     <Compile Include="ExtensionTests\GenericExtensionTests.cs" />
