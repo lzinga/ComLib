@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Extension", "ComLib.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Test", "ComLib.Test\ComLib.Test.csproj", "{F1C20C2F-4383-473A-9D3B-F16854A5909D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Unity", "ComLib.Unity\ComLib.Unity.csproj", "{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1C20C2F-4383-473A-9D3B-F16854A5909D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
