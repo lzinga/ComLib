@@ -58,9 +58,9 @@
     <Compile Include="TestClass.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComLib.Extensions\ComLib.Extension.csproj">
+    <ProjectReference Include="..\ComLib.Extensions\ComLib.Extensions.csproj">
       <Project>{2bf0ec73-a67f-47bb-b3a2-f931facc7866}</Project>
-      <Name>ComLib.Extension</Name>
+      <Name>ComLib.Extensions</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

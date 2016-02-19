@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ComLib.Extension
+namespace ComLib.Extensions
 {
     public static class StringExtensions
     {

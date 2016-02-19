@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ComLib.Extension
+namespace ComLib.Extensions
 {
     public static class ListExtensions
     {

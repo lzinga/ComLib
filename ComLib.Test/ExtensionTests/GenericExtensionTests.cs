@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
-using ComLib.Extension;
+using ComLib.Extensions;
 
 namespace ComLib.Test
 {

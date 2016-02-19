@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace ComLib.Extension
+namespace ComLib.Extensions
 {
     public static class NumberExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using ComLib.Extension;
+using ComLib.Extensions;
 using System.Linq;
 
 namespace ComLib.Test

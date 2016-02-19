@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace ComLib.Extension
+namespace ComLib.Extensions
 {
     public static class GenericExtensions
     {
@@ -72,6 +72,19 @@ namespace ComLib.Extension
             }
 
             return (T)Convert.ChangeType(arg, typeof(T), null);
+        }
+
+        private static System.Random rand = new System.Random((int)DateTime.Now.Ticks);
+
+        /// <summary>
+        /// Returns a random entry in an array
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="val"></param>
+        /// <returns>Random entry in array</returns>
+        public static T GetRandom<T>(this T[] val)
+        {
+            return val[rand.Next(val.Length)];
         }
     }
 }
