@@ -6,6 +6,8 @@ namespace ComLib.Extensions
 {
     public static class GenericExtensions
     {
+        private static System.Random rand = new System.Random((int)DateTime.Now.Ticks);
+
         /// <summary>
         /// Checks if object is null or default
         /// <para>
@@ -74,13 +76,9 @@ namespace ComLib.Extensions
             return (T)Convert.ChangeType(arg, typeof(T), null);
         }
 
-        private static System.Random rand = new System.Random((int)DateTime.Now.Ticks);
-
         /// <summary>
         /// Returns a random entry in an array
         /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="val"></param>
         /// <returns>Random entry in array</returns>
         public static T GetRandom<T>(this T[] val)
         {

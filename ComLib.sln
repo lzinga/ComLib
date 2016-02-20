@@ -9,6 +9,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Test", "ComLib.Test\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Unity", "ComLib.Unity\ComLib.Unity.csproj", "{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{7F48BCB2-7A49-43E2-BA62-DCCD8D21B094}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{51925C45-C82C-4E71-A5A8-B331306D10C4}"
+	ProjectSection(SolutionItems) = preProject
+		UnityEditor.dll = UnityEditor.dll
+		UnityEngine.dll = UnityEngine.dll
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +41,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51925C45-C82C-4E71-A5A8-B331306D10C4} = {7F48BCB2-7A49-43E2-BA62-DCCD8D21B094}
 	EndGlobalSection
 EndGlobal

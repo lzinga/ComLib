@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using ComLib.Extensions;
 using System.Collections;
+using ComLib.Unity.Extensions;
 
 namespace ComLib.Unity.Scripts
 {
