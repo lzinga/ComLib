@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="Extensions\ListComponent.cs" />
+    <Compile Include="Extensions\RectTransformExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\SingletonComponent.cs" />
     <Compile Include="Extensions\TransformExtensions.cs" />
