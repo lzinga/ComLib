@@ -56,20 +56,18 @@ namespace ComLib.Extensions
         /// </summary>
         public static bool IsMatch(this string value, params string[] patterns)
         {
+            bool pass = false;
+            
             foreach (string pat in patterns)
             {
                 Regex regex = new Regex(pat);
                 if (regex.IsMatch(value))
                 {
-                    return true;
-                }
-                else
-                {
-                    return false;
+                    pass = true;
                 }
             }
 
-            return false;
+            return pass;
         }
         
     }
