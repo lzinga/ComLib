@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ComLib.Extensions
 {
@@ -39,5 +41,36 @@ namespace ComLib.Extensions
 
             return source;
         }
+        
+        /// <summary>
+        /// Checks if the string matches the regex pattern.
+        /// </summary>
+        public static bool IsMatch(this string value, string pattern)
+        {
+            Regex regex = new Regex(pattern);
+            return regex.IsMatch(value);
+        }
+        
+        /// <summary>
+        /// Checks if the string matches many regex patterns.
+        /// </summary>
+        public static bool IsMatch(this string value, params string[] patterns)
+        {
+            foreach (string pat in patterns)
+            {
+                Regex regex = new Regex(pat);
+                if (regex.IsMatch(value))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+        
     }
 }
