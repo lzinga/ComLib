@@ -10,7 +10,7 @@ namespace ComLib.Unity.Extensions
         /// </summary>
         /// <param name="go">root gameObject</param>
         /// <param name="newLayer">new Layer</param>
-        public static void SetLayerRecursively(this GameObject go, int newLayer)
+        public static void SetLayerRecursively(this GameObject go, LayerMask newLayer)
         {
             go.layer = newLayer;
 
