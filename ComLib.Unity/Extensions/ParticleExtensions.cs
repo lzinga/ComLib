@@ -3,15 +3,13 @@ using System.Collections;
 
 namespace ComLib.Unity.Extensions
 {
-
     /// <summary>
-    /// Particle Extentions for unity 5.
+    /// Particle Extentions for Unity 5.
     /// </summary>
     public static class ParticleExtensions
     {
-
         /// <summary>
-        /// Enables a particle emission for a set amount of time and then disables it. No update needed this is using a IEnumerator with a WaitForSeconds timer.
+        /// Enables a particle emission for a set amount of time and then disables it. No update needed; this is using a IEnumerator with a WaitForSeconds timer.
         /// </summary>
         /// <param name="particleSystem"></param>
         /// <param name="timer"></param>
@@ -46,7 +44,7 @@ namespace ComLib.Unity.Extensions
         }
 
         /// <summary>
-        /// set current emission rate of selected particle system. This is needed because you cannot access emission directly.
+        /// Set current emission rate of selected particle system. This is needed because you cannot access emission directly.
         /// </summary>
         /// <param name="particleSystem"></param>
         /// <param name="emissionRate"></param>
