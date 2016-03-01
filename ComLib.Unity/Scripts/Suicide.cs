@@ -9,6 +9,7 @@ namespace ComLib.Unity.Scripts
     public class Suicide : MonoBehaviour
     {
         public float delay;
+        public bool killOnCollide = false;
 
         void Start()
         {
@@ -18,6 +19,12 @@ namespace ComLib.Unity.Scripts
         void Die()
         {
             Destroy(gameObject);
+        }
+
+        void OnCollisionEnter()
+        {
+            if(killOnCollide)
+                Destroy(gameObject);
         }
     }
 }
