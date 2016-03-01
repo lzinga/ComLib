@@ -51,6 +51,7 @@
     <Compile Include="Extensions\GameObjectExtensions.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="Components\ListComponent.cs" />
+    <Compile Include="Extensions\ParticleExtensions.cs" />
     <Compile Include="Extensions\RectTransformExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Components\SingletonComponent.cs" />
