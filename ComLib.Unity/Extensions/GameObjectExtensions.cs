@@ -14,9 +14,9 @@ namespace ComLib.Unity.Extensions
         {
             go.layer = newLayer;
 
-            foreach (GameObject child in go.transform)
+            for (int i = 0; i < go.transform.childCount; i++)
             {
-                child.SetLayerRecursively(newLayer);
+                go.transform.GetChild(i).gameObject.SetLayerRecursively(newLayer);
             }
         }
 
