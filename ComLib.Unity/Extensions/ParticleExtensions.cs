@@ -7,7 +7,7 @@ namespace ComLib.Unity.Extensions
     /// <summary>
     /// Particle Extentions for unity 5.
     /// </summary>
-    public static class ParticleExtentions
+    public static class ParticleExtensions
     {
 
         /// <summary>
