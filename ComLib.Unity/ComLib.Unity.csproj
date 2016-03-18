@@ -48,6 +48,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Editor\InspectorReadOnlyProperty.cs" />
+    <Compile Include="Editor\ReadOnlyAttribute.cs" />
     <Compile Include="Extensions\GameObjectExtensions.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
     <Compile Include="Components\ListComponent.cs" />
@@ -56,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Components\SingletonComponent.cs" />
     <Compile Include="Extensions\TransformExtensions.cs" />
+    <Compile Include="Editor\Heirarchy.cs" />
     <Compile Include="Scripts\AudioCollection.cs" />
     <Compile Include="Scripts\FPSDisplay.cs" />
     <Compile Include="Scripts\ParticleDetach.cs" />
@@ -63,6 +66,7 @@
     <Compile Include="Scripts\Suicide.cs" />
     <Compile Include="Scripts\UIMouseTilt.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,8 +8,7 @@ A library that contains useful methods/function/extensions so I don't have to ke
 Since unity is built on an older .net framework version has no connection with `ComLib.Extensions` and should have no connection 
 to any other library in this solution unless it supports .net 3.5.
 
-`ComLib.Unity` should be able to run independantly with its only dependancy being .net 3.5 supportable libaries and the unity libaries.
-
+`ComLib.Unity` should be able to run independantly with its only dependancy being .net 3.5 supportable libraries.
 
 ## Unity DLLs
 We claim no ownership of the dll files and only provide them for the build process of this library. They should not be included with your unity build
