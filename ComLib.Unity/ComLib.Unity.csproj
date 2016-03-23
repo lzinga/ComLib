@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Editor\InspectorReadOnlyProperty.cs" />
+    <Compile Include="Editor\BeautyList.cs" />
     <Compile Include="Editor\ReadOnlyAttribute.cs" />
     <Compile Include="Extensions\GameObjectExtensions.cs" />
     <Compile Include="Extensions\GenericExtensions.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Scripts\FPSDisplay.cs" />
     <Compile Include="Scripts\ParticleDetach.cs" />
     <Compile Include="Scripts\Spin.cs" />
+    <Compile Include="Scripts\PoolManager.cs" />
     <Compile Include="Scripts\Suicide.cs" />
     <Compile Include="Scripts\UIMouseTilt.cs" />
   </ItemGroup>
