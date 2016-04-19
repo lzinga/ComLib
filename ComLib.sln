@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{
 		UnityEngine.dll = UnityEngine.dll
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComLib.Unity.Editor", "ComLib.Unity.Editor\ComLib.Unity.Editor.csproj", "{1EA36AAA-4802-4359-BE4F-E2C11D6211D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDA03DDB-1B0A-4213-A05F-71B9BDF59D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA36AAA-4802-4359-BE4F-E2C11D6211D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA36AAA-4802-4359-BE4F-E2C11D6211D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA36AAA-4802-4359-BE4F-E2C11D6211D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA36AAA-4802-4359-BE4F-E2C11D6211D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
